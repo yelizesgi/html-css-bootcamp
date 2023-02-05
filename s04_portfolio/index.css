@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*! ---- NAV ---- */
+nav {
+  background-color: black;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+nav a:hover {
+  background-color: orangered;
+  color: white;
+}
+
+/*! ---- HERO ---- */
+.hero {
+  background-image: url("./img/me.jpg");
+  height: calc(100vh - 62px);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-title {
+  font-size: 40px;
+  color: white;
+  /*? x,y,blur,color */
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.9);
+}
+
+.hero-par {
+  font-size: 30px;
+  color: orangered;
+  font-weight: 700;
+  text-shadow: 0px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+/*! ---- ABOUT ---- */
+
+#about {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.about-img-div img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-img-div {
+  flex: 1;
+}
+
+.about-text-div {
+  flex: 2;
+  text-align: justify;
+  /* line-height: 2; */
+}
+
+/*! ---- SERVICE ---- */
+
+#services {
+  background-color: #eee;
+}
+
+#services img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#services .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/*! ---- FOOTER ---- */
+footer {
+  background-color: black;
+  padding: 40px;
+}
+
+footer a {
+  color: white;
+  margin-right: 10px;
+}
+
+.social-icons {
+  font-size: 40px;
+}
+
+/* footer a:hover {
+  color: orangered;
+} */
+
+footer i:hover {
+  color: orangered;
+}
+
+/*! ---- WHATSAPP ICON ---- */
+
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed a {
+  color: white;
+}
+
+.fixed:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

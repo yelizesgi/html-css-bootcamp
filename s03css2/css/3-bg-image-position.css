@@ -1,0 +1,65 @@
+* {
+    /* universal selector tüm elemanları seçer */
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    /* margin-right: 10px;
+  margin-bottom: 10px; */
+    margin: 10px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: orange;
+}
+
+.hero {
+    background-image: url("../pexels-pixabay-461064.jpg");
+    height: 100vh;
+    /* background-size: contain;
+    background-repeat: no-repeat;  */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    /*top: 300px;
+     left: 200px;*/
+    top: 30%;
+    left: 20%;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    width: 50px;
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+}
+
+.fixed {
+    opacity: 0.6;
+    cursor: pointer;
+}

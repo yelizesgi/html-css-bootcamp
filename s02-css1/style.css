@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#first-par {
+    color: bisque;
+    font-weight: 700;
+    /* font kalınlığı*/
+    font-size: 25px;
+    background-color: chocolate;
+}
+
+div {
+    background-color: brown;
+}
+
+
+/* CSS' de degisken veya property'ler isim verirken kebap-case notasyonu kullanilir.*/
+
+.my-par {
+    line-height: 1.5;
+    /* satır yüksekliği*/
+    word-spacing: 10px;
+    /* kelimeler arası bosluk*/
+    letter-spacing: 5px;
+    /**harfler arasi bosluk*/
+}
+
+
+/* a ziyaret edilmeden önce çalışır*/
+
+a:link {
+    color: blueviolet;
+    text-decoration: none;
+    /* çizgi yok*/
+    text-decoration: overline;
+    /*üstü çizgili*/
+    text-decoration: line-through;
+    /*üzeri cizgili*/
+}
+
+
+/* a ziyaret edildiğinde çalışır*/
+
+a:visited {
+    color: red;
+}
+
+
+/* a etiketinin üzerine gelindiğinde çalışır*/
+
+a:hover {
+    color: green;
+}

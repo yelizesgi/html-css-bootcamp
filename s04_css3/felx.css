@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: aqua;
+    padding: 30px;
+    /*height: 150px; */
+    /* Dikey hizalamayı görebilmek için eklendi */
+    /* Elemanların dizilişi yönü: colum,row,row reverse,colum-reverse*/
+    flex-direction: row;
+    /*? gap, flex icerisindeki elemanlarin dikey ve yatay bosluklarini belirlemek icin kullanilabilir.
+  //*? ilk yazilan yatay (satirlar arasi) bosluk, 2. yazilan ise dikey (sutunlar arasi) bosluktur */
+    gap: 20px;
+    /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+    flex-wrap: wrap;
+    text-align: center;
+    /* yatay hizalama için: justify-content */
+    justify-content: center;
+    /* Dikey hizalamada align-items kullanılır*/
+    /**flex-start, flex-end,center,space around,space evently,space-between*/
+    align-items: flex-start;
+}
+
+ul li {
+    background-color: antiquewhite;
+    padding: 10px;
+    color: violet;
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    /* satir ve sütun arasi mesafe */
+    gap: 30px;
+    /* Hizalamalar */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* resmi içinde bulunduğu divde ortala */
+    flex-wrap: wrap;
+    /* Alan yeterli olmazsa itemleri asagiya gönderiyor */
+}
+
+.img-div img {
+    width: 100%;
+    /* min-width: 300px; */
+    max-width: 500px;
+}
+
+.text-div {
+    flex: 2;
+    /* yazi divi 2 birim uzunlukta */
+}
+
+.img-div {
+    flex: 1;
+    /* resmin divi 1 birim uzunlukta*/
+}
